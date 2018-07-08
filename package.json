@@ -1,0 +1,8 @@
+{
+  "name": "RememberMe-afe",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:HaochengLEE/RememberMe-afe.git",
+  "author": "lihaocheng <lihaocheng00@126.com>",
+  "license": "MIT"
+}
