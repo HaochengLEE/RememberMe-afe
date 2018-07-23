@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts":{
     "dev" : "node_modules/.bin/webpack-dev-server",
-    "dist": "node_modules/.bin/webpack"
+    "dist": "node_modules/.bin/webpack -p"
   },
   "devDependencies": {
     "babel-loader": "7.1.2",
