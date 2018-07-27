@@ -6,9 +6,31 @@
 */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router , Switch , Redirect , Route , Link} from 'react-router-dom'
 
-import './index.css';
+import Layout from 'component/layout/index.jsx';
+//页面
+import Home from 'page/home/index.jsx';
+
+class App extends React.Component{
+	render(){
+		return(
+			<Router>
+				<Layout>
+					<Switch>
+						<Route exact path="/" component={Home}/>
+						<Redirect from="*" to="/"/>
+					</Switch>
+				</Layout>
+			</Router>
+
+			);
+	}
+}
+
 ReactDOM.render(
-	<h1>Hello,world</h1>,
-	document.getElementById('app')	
-);
+
+	<App/>,
+	
+	document.getElementById('app')
+	);
