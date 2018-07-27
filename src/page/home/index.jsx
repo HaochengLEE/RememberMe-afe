@@ -10,7 +10,7 @@ import './index.css';
 class Home extends React.Component{
 	render(){
 		return(
-				<div>Home</div>
+				<div id="page-wrapper"></div>
 			);
 
 	}

@@ -1,6 +1,9 @@
 import React from 'react';
 
-class Layout ectends React.Component{
+import TopNav from 'component/nav-top/index.jsx';
+import SideNav from 'component/nav-side/index.jsx';
+import './theme.css';
+class Layout extends React.Component{
 	constructor(props){
 		super(props);
 	}
@@ -8,11 +11,9 @@ class Layout ectends React.Component{
 	render(){
 		return (
 			<div id="wrapper">
-			test layout
-			{/*
+			
 			<TopNav/>
 			<SideNav/>
-		    */}
 			{this.props.children}
 			</div>
 
