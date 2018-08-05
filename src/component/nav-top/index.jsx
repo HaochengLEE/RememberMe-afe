@@ -10,13 +10,8 @@ class TopNav extends React.Component{
 		return (
 			<div className="navbar navbar-default top-navbar" role="navigation">
             <div className="navbar-header">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
-                <a className="navbar-brand" href="index.html"><b>In</b>sight</a>
+                
+                <a className="navbar-brand" href="index.html"><b>Remember</b>Me</a>
             </div>
 
             <ul className="nav navbar-top-links navbar-right">
