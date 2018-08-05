@@ -2,7 +2,7 @@
 * @Author: lihaocheng
 * @Date:   2018-07-28 00:12:10
 * @Last Modified by:   lihaocheng
-* @Last Modified time: 2018-07-28 00:12:26
+* @Last Modified time: 2018-08-05 23:40:15
 */
 /*----------------------------------------------
 Author : www.webthemez.com
@@ -15,29 +15,27 @@ http://creativecommons.org/licenses/by/3.0/
 ------------------------------------------------*/
  body {
     font-family:'Open Sans', sans-serif;
+    background: #f3f3f3;
 }
 #wrapper {
     width: 100%;
-    background: #2b2e33;
+    /*background: #2b2e33;*/
 }
 #page-wrapper {
     padding: 15px 15px;
-    min-height: 600px;
-    background: #f3f3f3;
+    /*min-height: 600px;*/
 }
-#page-inner {
+/*#page-inner {
     width:100%;
     margin:10px 20px 10px 0px;
     background-color:transparent;
     padding:10px;
     min-height:1200px;
-}
+}*/
 .text-center {
     text-align:center;
 }
-.no-boder {
-    border:1px solid #f3f3f3;
-}
+
 h1, .h1, h2, .h2, h3, .h3 {
     margin-top: 7px;
     margin-bottom: -5px;
@@ -67,6 +65,7 @@ p {
     padding: 8px;
     width: 30px;
     text-align: center;
+
 }
 .top-navbar {
     position: fixed;
@@ -80,7 +79,11 @@ p {
     z-index: 1;
     position: fixed;
     width: 260px;
-    top: 80px;
+    top: 60px;
+    bottom: 0;
+    overflow-y:auto;
+    background: #32323a; 
+
 }
 #page-wrapper {
     position: relative;
@@ -444,7 +447,7 @@ ul.nav.nav-second-level.collapse.in {
 }
 .navbar-side {
     border:none;
-    background-color: transparent;
+    /*background-color: transparent;*/
 }
 .top-navbar {
     background: #fff;
@@ -496,11 +499,19 @@ ul.nav.nav-second-level.collapse.in {
 /*----------------------------------------------
     MEDIA QUERIES     
 ------------------------------------------------*/
- @media(min-width:768px) {
+ @media(max-width:768px) {
+
+    .top-navbar{
+        position: relative;
+        
+    }
+    .top-navbar .navbar-brand{
+        width: 100%;
+    }
     #page-wrapper {
         margin: 0 0 0 260px;
         padding: 15px 30px;
-        min-height: 1200px;
+        /*min-height: 1200px;*/
     }
     .navbar-side {
         z-index: 1;
@@ -517,7 +528,8 @@ ul.nav.nav-second-level.collapse.in {
         font-size: 19px;
     }
 }
-采集#HUABAN_WIDGETS {
+//采集
+#HUABAN_WIDGETS {
     font-family:"helvetica neue", arial, sans-serif;
     color: #444;
     font-size: 14px;
