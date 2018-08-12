@@ -2,7 +2,7 @@
 * @Author: lihaocheng
 * @Date:   2018-07-28 00:12:10
 * @Last Modified by:   lihaocheng
-* @Last Modified time: 2018-08-05 23:40:15
+* @Last Modified time: 2018-08-13 00:15:02
 */
 /*----------------------------------------------
 Author : www.webthemez.com
@@ -351,6 +351,7 @@ footer p {
 }
 .navbar-brand b {
     color: #2DAFCB;
+    margin-right:5px; 
 }
 .top-navbar .nav > li {
     position: relative;
@@ -508,17 +509,22 @@ ul.nav.nav-second-level.collapse.in {
     .top-navbar .navbar-brand{
         width: 100%;
     }
-    #page-wrapper {
-        margin: 0 0 0 260px;
-        padding: 15px 30px;
-        /*min-height: 1200px;*/
-    }
-    .navbar-side {
+    
+    .navbar-side{
         z-index: 1;
-        width: 260px;
+        width: 100%;
+        position: relative;
+        top:0;
+        
     }
     .navbar {
         border-radius: 0px;
+    }
+    #page-wrapper {
+        margin: 0;
+        padding: 15px 30px;
+        top:0;
+        /*min-height: 1200px;*/
     }
 }
 @media(max-width:480px) {
